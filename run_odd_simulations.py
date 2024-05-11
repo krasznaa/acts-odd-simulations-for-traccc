@@ -66,7 +66,7 @@ def main():
                       '--gun-pt-range', str(pt), str(pt),
                       '--events', '100',
                       '--skip', str(i * 100)],
-            } for i in range(10)]
+            } for i in range(100)]
          pass
 
    # Add the ttbar simulations.
@@ -78,7 +78,8 @@ def main():
                    '--ttbar-pu', str(mu),
                    '--events', '10',
                    '--skip', str(i * 10)],
-   } for i in range(50)]
+         } for i in range(0, 50)]
+      pass
 
    # Add some common parameters.
    ijob = 1
